@@ -55,3 +55,36 @@
     border: 2px solid #fff;
 }
 
+/* media */
+@media screen and (min-width: 600px){
+    .container{
+        max-width: 50%;
+        max-height: 500px;
+    }
+    .container .btns .btn{
+        padding: 12px 2rem;
+    }
+    .container .btns .btn:nth-child(2){
+        margin: 0 1rem;
+    }
+}
+@media screen and (min-width: 900px){
+    .container{
+        max-width: 50%;
+        max-height: 500px;
+    }
+    .container .btns .btn{
+        padding: 12px 3rem;
+        font-size: 1.4rem;
+    }
+    .container .btns .btn:nth-child(2){
+        margin: 0 2rem;
+    }
+}
+@media screen and (min-width: 1400px){
+    .container .btns .btn:nth-child(2){
+        margin: 0 5rem;
+    }
+}
+
+
