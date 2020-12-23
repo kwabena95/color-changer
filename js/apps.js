@@ -15,20 +15,26 @@ btns.forEach((btn) => {
         if (eventTarget.contains('increase')) {
             count++;
             // change color of counter
-            value.style.color = 'green';
-            value.style.transition = '1s ease-in-out'
+            if (count > 0) {
+                value.style.color = 'green';
+                value.style.transition = '1s ease-in-out';
+            }
+
         }
         else if (eventTarget.contains('decrease')) {
             count--;
             // change color of counter
-            value.style.color = 'red';
-            value.style.transition = '1s ease-in-out'
+            if (count < 0) {
+                value.style.color = 'red';
+                value.style.transition = '1s ease-in-out';
+            }
+
         }
         else {
             count = 0;
             // change color of counter
             value.style.color = 'white';
-            value.style.transition = '1s ease-in-out'
+            value.style.transition = '1s ease-in-out';
         }
 
 
